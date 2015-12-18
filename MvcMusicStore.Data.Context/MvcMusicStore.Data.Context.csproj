@@ -51,7 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config\BaseContext.cs" />
+    <Compile Include="Config\BaseReadOnlyDbContext.cs" />
+    <Compile Include="Config\BaseDbContext.cs" />
     <Compile Include="Config\ContextInitializer.cs" />
     <Compile Include="ContextManager.cs" />
     <Compile Include="Interfaces\IContextManager.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Mapping\OrderDetailMap.cs" />
     <Compile Include="Mapping\OrderMap.cs" />
     <Compile Include="Mapping\CartMap.cs" />
+    <Compile Include="MusicStoreReadOnlyContext.cs" />
     <Compile Include="MusicStoreContext.cs" />
     <Compile Include="Mapping\AlbumMap.cs" />
     <Compile Include="Mapping\ArtistMap.cs" />

@@ -3,9 +3,9 @@ using MvcMusicStore.Data.Context.Interfaces;
 
 namespace MvcMusicStore.Data.Context.Config
 {
-    public class BaseDbContext : DbContext, IDbContext
+    public class BaseReadOnlyDbContext : DbContext, IDbContext
     {
-        public BaseDbContext(string connectionStringName, int? currentUserId = null)
+        public BaseReadOnlyDbContext(string connectionStringName, int? currentUserId = null)
             : base(connectionStringName)
         {
             CurrentUserId = currentUserId;

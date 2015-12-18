@@ -76,6 +76,13 @@
     <Compile Include="EntityFramework\CartRepository.cs" />
     <Compile Include="EntityFramework\Common\Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadOnlyEntityFramework\AlbumReadOnlyRepository.cs" />
+    <Compile Include="ReadOnlyEntityFramework\ArtistReadOnlyRepository.cs" />
+    <Compile Include="ReadOnlyEntityFramework\CartReadOnlyRepository.cs" />
+    <Compile Include="ReadOnlyEntityFramework\Common\ReadOnlyRepository.cs" />
+    <Compile Include="ReadOnlyEntityFramework\GenreReadOnlyRepository.cs" />
+    <Compile Include="ReadOnlyEntityFramework\OrderDetailReadOnlyRepository.cs" />
+    <Compile Include="ReadOnlyEntityFramework\OrderReadOnlyRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MvcMusicStore.Data.Context\MvcMusicStore.Data.Context.csproj">
