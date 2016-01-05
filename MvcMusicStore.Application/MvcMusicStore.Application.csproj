@@ -51,7 +51,11 @@
   <ItemGroup>
     <Compile Include="AppService.cs" />
     <Compile Include="AlbumAppService.cs" />
+    <Compile Include="UserAppService.cs" />
+    <Compile Include="ClientAppService.cs" />
     <Compile Include="GenreAppService.cs" />
+    <Compile Include="Interfaces\IUserAppService.cs" />
+    <Compile Include="Interfaces\IClientAppService.cs" />
     <Compile Include="Interfaces\IGenreAppService.cs" />
     <Compile Include="OrderDetailAppService.cs" />
     <Compile Include="OrderAppService.cs" />

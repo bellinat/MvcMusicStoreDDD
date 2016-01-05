@@ -2,7 +2,7 @@
 using MvcMusicStore.Domain.Entities;
 using MvcMusicStore.Domain.Interfaces.Repository.ReadOnly;
 
-namespace MvcMusicStore.Data.Repository.EntityFramework
+namespace MvcMusicStore.Data.Repository.ReadOnlyEntityFramework
 {
     public class CartReadOnlyRepository : ReadOnlyRepository<Cart>, ICartReadOnlyRepository
     {

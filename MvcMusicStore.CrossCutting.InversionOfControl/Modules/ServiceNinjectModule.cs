@@ -18,6 +18,8 @@ namespace MvcMusicStore.CrossCutting.InversionOfControl.Modules
             Bind<ICartService>().To<CartService>();
             Bind<IOrderService>().To<OrderService>();
             Bind<IOrderDetailService>().To<OrderDetailService>();
+            Bind<IClientService>().To<ClientService>();
+            Bind<IUserService>().To<UserService>();
         }
     }
 }

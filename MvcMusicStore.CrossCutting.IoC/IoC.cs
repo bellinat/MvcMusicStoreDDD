@@ -44,7 +44,7 @@ namespace MvcMusicStore.CrossCutting.IoC
 
             #region Repository Module
 
-            container.Register(typeof(IRepository<>), typeof(Repository<>), new WebRequestLifestyle());
+            //container.Register(typeof(IRepository<>), typeof(Repository<>), new WebRequestLifestyle());
 
             container.RegisterPerWebRequest<IGenreRepository, GenreRepository>();
             container.RegisterPerWebRequest<IGenreReadOnlyRepository, GenreDapperRepository>();

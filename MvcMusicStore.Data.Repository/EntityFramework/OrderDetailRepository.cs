@@ -1,10 +1,12 @@
-﻿using MvcMusicStore.Data.Repository.EntityFramework.Common;
+﻿using MvcMusicStore.Data.Context;
+using MvcMusicStore.Data.Context.Interfaces;
+using MvcMusicStore.Data.Repository.EntityFramework.Common;
 using MvcMusicStore.Domain.Entities;
 using MvcMusicStore.Domain.Interfaces.Repository;
 
 namespace MvcMusicStore.Data.Repository.EntityFramework
 {
-    public class OrderDetailRepository : Repository<OrderDetail>, IOrderDetailRepository
+    public class OrderDetailRepository : Repository<OrderDetail, MusicStoreContext>, IOrderDetailRepository
     {
     }
 }

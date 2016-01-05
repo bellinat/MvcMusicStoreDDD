@@ -10,16 +10,17 @@ using MvcMusicStore.Domain.Interfaces.Repository.Common;
 
 namespace MvcMusicStore.Data.Repository.EntityFramework.Common
 {
-    public class Repository<TEntity> : IRepository<TEntity>, IDisposable
+    public class Repository<TEntity, TContext> : IRepository<TEntity>, IDisposable
         where TEntity : class
+        where TContext : IDbContext, new()
     {
         private readonly IDbContext _dbContext;
         private readonly IDbSet<TEntity> _dbSet;
 
         public Repository()
         {
-            var contextManager = ServiceLocator.Current.GetInstance<IContextManager<MusicStoreContext>>() 
-                as ContextManager<MusicStoreContext>;
+            var contextManager = ServiceLocator.Current.GetInstance<IContextManager<TContext>>()
+                as ContextManager<TContext>;
 
             _dbContext = contextManager.GetContext();
             _dbSet = _dbContext.Set<TEntity>();

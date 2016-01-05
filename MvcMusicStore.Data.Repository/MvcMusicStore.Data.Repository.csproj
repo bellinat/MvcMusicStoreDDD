@@ -63,11 +63,15 @@
   <ItemGroup>
     <Compile Include="Dapper\Common\Repository.cs" />
     <Compile Include="Dapper\AlbumDapperRepository.cs" />
+    <Compile Include="Dapper\UserDapperRepository.cs" />
     <Compile Include="Dapper\GenreDapperRepository.cs" />
     <Compile Include="Dapper\ArtistDapperRepository.cs" />
+    <Compile Include="Dapper\ClientDapperRepository.cs" />
     <Compile Include="Dapper\OrderDetailDapperRepository.cs" />
     <Compile Include="Dapper\OrderDapperRepository.cs" />
     <Compile Include="Dapper\CartDapperRepository.cs" />
+    <Compile Include="EntityFramework\UserRepository.cs" />
+    <Compile Include="EntityFramework\ClientRepository.cs" />
     <Compile Include="EntityFramework\GenreRepository.cs" />
     <Compile Include="EntityFramework\AlbumRepository.cs" />
     <Compile Include="EntityFramework\ArtistRepository.cs" />
@@ -78,6 +82,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadOnlyEntityFramework\AlbumReadOnlyRepository.cs" />
     <Compile Include="ReadOnlyEntityFramework\ArtistReadOnlyRepository.cs" />
+    <Compile Include="ReadOnlyEntityFramework\ClientReadOnlyRepository.cs" />
     <Compile Include="ReadOnlyEntityFramework\CartReadOnlyRepository.cs" />
     <Compile Include="ReadOnlyEntityFramework\Common\ReadOnlyRepository.cs" />
     <Compile Include="ReadOnlyEntityFramework\GenreReadOnlyRepository.cs" />

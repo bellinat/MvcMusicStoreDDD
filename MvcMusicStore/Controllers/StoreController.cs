@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using MvcMusicStore.Application.Interfaces;
-using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Controllers
 {
@@ -12,11 +7,19 @@ namespace MvcMusicStore.Controllers
     {
         private readonly IGenreAppService _genreAppService;
         private readonly IAlbumAppService _albumAppService;
+        private readonly IClientAppService _clientAppService;
+        private readonly IUserAppService _userAppService;
 
-        public StoreController(IGenreAppService genreAppService, IAlbumAppService albumAppService)
+        public StoreController(
+            IGenreAppService genreAppService, 
+            IAlbumAppService albumAppService, 
+            IClientAppService clientAppService,
+            IUserAppService userAppService)
         {
             _genreAppService = genreAppService;
             _albumAppService = albumAppService;
+            _clientAppService = clientAppService;
+            _userAppService = userAppService;
         }
 
         //
@@ -25,6 +28,12 @@ namespace MvcMusicStore.Controllers
         public ActionResult Index()
         {
             var genres = _genreAppService.All(@readonly: true);
+
+            // TESTE PARA VERIFICAR O CONTEXTO StoreContext
+            var clients = _clientAppService.All();
+
+            // TESTE PARA VERIFICAR O CONTEXTO IdentityContext
+            var users = _userAppService.All();
 
             return View(genres);
         }

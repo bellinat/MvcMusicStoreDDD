@@ -55,13 +55,26 @@
     <Compile Include="Config\BaseDbContext.cs" />
     <Compile Include="Config\ContextInitializer.cs" />
     <Compile Include="ContextManager.cs" />
+    <Compile Include="IdentityContext.cs" />
+    <Compile Include="IdentityMigrations\201601051517009_V01.cs" />
+    <Compile Include="IdentityMigrations\201601051517009_V01.Designer.cs">
+      <DependentUpon>201601051517009_V01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityMigrations\Configuration.cs" />
     <Compile Include="Interfaces\IContextManager.cs" />
     <Compile Include="Interfaces\IDbContext.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Mapping\ClientMap.cs" />
     <Compile Include="Mapping\GenreMap.cs" />
     <Compile Include="Mapping\OrderDetailMap.cs" />
     <Compile Include="Mapping\OrderMap.cs" />
     <Compile Include="Mapping\CartMap.cs" />
+    <Compile Include="Mapping\RoleMap.cs" />
+    <Compile Include="Mapping\UserClaimMap.cs" />
+    <Compile Include="Mapping\UserLoginMap.cs" />
+    <Compile Include="Mapping\UserMap.cs" />
+    <Compile Include="Mapping\UserRoleMap.cs" />
+    <Compile Include="StoreContext.cs" />
     <Compile Include="MusicStoreReadOnlyContext.cs" />
     <Compile Include="MusicStoreContext.cs" />
     <Compile Include="Mapping\AlbumMap.cs" />
@@ -78,6 +91,11 @@
       <Project>{cee7b22f-c3ff-4f1e-92b0-8b30f52b3f1e}</Project>
       <Name>MvcMusicStore.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IdentityMigrations\201601051517009_V01.resx">
+      <DependentUpon>201601051517009_V01.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
