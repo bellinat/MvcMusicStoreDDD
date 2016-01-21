@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.CrossCutting.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.CrossCutting.IoCSimpleInjector", "MvcMusicStore.CrossCutting.IoCSimpleInjector\MvcMusicStore.CrossCutting.IoCSimpleInjector.csproj", "{D4DC3D41-0504-4489-BAA3-08CCF23374DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{890EA8F6-8604-4D59-94E7-EB504B315394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Application.Tests", "MvcMusicStore.Application.Tests\MvcMusicStore.Application.Tests.csproj", "{0A694F96-7F4E-4D14-BB2D-7EE1A83737F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,10 @@ Global
 		{D4DC3D41-0504-4489-BAA3-08CCF23374DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4DC3D41-0504-4489-BAA3-08CCF23374DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4DC3D41-0504-4489-BAA3-08CCF23374DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A694F96-7F4E-4D14-BB2D-7EE1A83737F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A694F96-7F4E-4D14-BB2D-7EE1A83737F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A694F96-7F4E-4D14-BB2D-7EE1A83737F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A694F96-7F4E-4D14-BB2D-7EE1A83737F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,5 +99,6 @@ Global
 		{3AD3EC51-325A-4EB2-9E01-5E0C47801B4E} = {1B2E7E26-089E-431B-AF06-C52E9B3FC324}
 		{0C72A678-6DD4-451E-8744-66114ADCAFCB} = {1B2E7E26-089E-431B-AF06-C52E9B3FC324}
 		{D4DC3D41-0504-4489-BAA3-08CCF23374DC} = {1B2E7E26-089E-431B-AF06-C52E9B3FC324}
+		{0A694F96-7F4E-4D14-BB2D-7EE1A83737F9} = {890EA8F6-8604-4D59-94E7-EB504B315394}
 	EndGlobalSection
 EndGlobal
